@@ -4,7 +4,6 @@ import tailwindcss from '@tailwindcss/postcss';
 
 // https://astro.build/config
 export default defineConfig({
-  base: '/blog',
   integrations: [react()],
   vite: {
     css: {
