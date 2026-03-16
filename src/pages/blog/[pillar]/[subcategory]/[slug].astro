@@ -20,7 +20,13 @@ const { pillar, subcategory } = Astro.params;
 const { Content } = await render(post);
 ---
 
-<BaseLayout title={post.data.title}>
+<BaseLayout 
+  title={post.data.title}
+  description={post.data.excerpt}
+  type="article"
+  publishedDate={new Date(post.data.date).toISOString()}
+  author={post.data.author}
+>
   <main class="flex-grow bg-background py-20">
     <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Back Button */}
