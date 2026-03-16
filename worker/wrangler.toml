@@ -1,6 +1,14 @@
 name = "grantwisdom-blog-proxy"
 main = "index.ts"
 compatibility_date = "2024-03-16"
+compatibility_flags = ["nodejs_compat"]
 
-# You will need to add your custom domain in the Cloudflare Dashboard:
-# grantwisdom.com/blog/* -> this worker
+# After deploying, add this route in the Cloudflare Dashboard:
+#   Workers & Pages → grantwisdom-blog-proxy → Triggers → Routes
+#   Route: grantwisdom.com/blog*  (covers /blog and all sub-paths)
+#   Zone: grantwisdom.com
+
+# Alternatively add via wrangler by setting your zone_id:
+# [[routes]]
+# pattern = "grantwisdom.com/blog*"
+# zone_name = "grantwisdom.com"
