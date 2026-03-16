@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { Box, ArrowRight } from 'lucide-react';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  const pillars = [...new Set(posts.map(post => post.data.pillar))];
+  
+  return pillars.map(pillar => {
+    const pillarPosts = posts.filter(post => post.data.pillar === pillar);
+    const subcategories = [...new Set(pillarPosts.map(post => ({
+        name: post.data.subcategory.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
+        slug: post.data.subcategory
+    })))];
+    
+    return {
+      params: { pillar },
+      props: { subcategories }
+    };
+  });
+}
+
+const { pillar } = Astro.params;
+const { subcategories } = Astro.props;
+---
+
+<BaseLayout title={pillar.charAt(0).toUpperCase() + pillar.slice(1)}>
+  <main class="flex-grow bg-background py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-3 mb-4">
+        <a href="/blog" class="text-xs font-black text-muted-foreground hover:text-accent uppercase tracking-widest">Blog</a>
+        <span class="text-muted-foreground">/</span>
+        <span class="text-xs font-black text-accent uppercase tracking-widest">{pillar}</span>
+      </div>
+      <h1 class="text-4xl font-black text-foreground mb-12 tracking-tight capitalize">{pillar} Resources</h1>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {subcategories.map((sub) => (
+          <a href={`/blog/${pillar}/${sub.slug}`}>
+            <div class="bg-card border border-border rounded-3xl p-8 hover:border-accent/40 transition-all group shadow-sm">
+              <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Box class="text-accent" />
+              </div>
+              <h2 class="text-2xl font-bold mb-4 group-hover:text-accent transition-colors">{sub.name}</h2>
+              <p class="text-muted-foreground font-medium mb-6">Explore our curated collection of articles, guides, and news for {sub.name.toLowerCase()}.</p>
+              <span class="inline-flex items-center gap-2 text-xs font-black text-accent uppercase tracking-tighter">
+                Browse Subcategory <ArrowRight size={14} />
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </main>
+</BaseLayout>

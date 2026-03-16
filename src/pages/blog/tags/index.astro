@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { Tag } from 'lucide-react';
+
+const posts = await getCollection('blog');
+const tags = [...new Set(posts.flatMap(post => post.data.tags || []))].sort();
+---
+
+<BaseLayout title="Tag Cloud">
+  <main class="flex-grow bg-background py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-3 mb-4">
+        <a href="/blog" class="text-xs font-black text-muted-foreground hover:text-accent uppercase tracking-widest">Blog</a>
+        <span class="text-muted-foreground">/</span>
+        <span class="text-xs font-black text-accent uppercase tracking-widest">Tags</span>
+      </div>
+      <h1 class="text-4xl font-black text-foreground mb-12 tracking-tight">Topics & Categories</h1>
+      
+      <div class="flex flex-wrap gap-4">
+        {tags.map((tag) => (
+          <a href={`/blog/tag/${tag}`}>
+            <div class="bg-card border border-border rounded-xl px-6 py-4 hover:border-accent/40 transition-all group shadow-sm flex items-center gap-3">
+              <Tag class="w-4 h-4 text-accent" />
+              <span class="font-bold group-hover:text-accent transition-colors capitalize">{tag}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </main>
+</BaseLayout>
