@@ -1,0 +1,6 @@
+name = "grantwisdom-blog-proxy"
+main = "index.ts"
+compatibility_date = "2024-03-16"
+
+# You will need to add your custom domain in the Cloudflare Dashboard:
+# grantwisdom.com/blog/* -> this worker
