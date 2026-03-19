@@ -5,7 +5,8 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://grantwisdom-blog.pages.dev',
+  site: 'https://grantwisdom.com',
+  base: '/blog',
   integrations: [
     react(),
     sitemap(),
