@@ -84,9 +84,16 @@ export function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-muted-foreground text-sm">
-            © {currentYear} GrantWisdom. All rights reserved.
-          </p>
+          <div className="flex flex-col items-start gap-1">
+            <p className="text-muted-foreground text-sm">
+              © {currentYear} GrantWisdom. All rights reserved.
+            </p>
+            <p className="text-xs text-muted-foreground flex items-center gap-1">
+              Powered by <a href="https://EverRank.app" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">EverRank</a> 
+              <span className="mx-1">•</span> 
+              Built by <a href="https://Galaxybuilt.dev" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">GalaxyBuilt</a>
+            </p>
+          </div>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
               Twitter

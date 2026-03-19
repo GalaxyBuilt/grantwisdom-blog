@@ -16,7 +16,7 @@ interface Props {
 const {
   title,
   description = "Search 200,000+ grants worldwide. AI-powered matching and application drafts.",
-  image = "/og-default.png",
+  image = "/og-main.png",
   type = "website",
   publishedDate,
   author = "GrantWisdom Team",
@@ -65,6 +65,25 @@ const fullTitle = `${title} | GrantWisdom`;
 
     <!-- RSS Feed -->
     <link rel="alternate" type="application/rss+xml" title="GrantWisdom Blog RSS" href="/rss.xml" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L39135G3DR"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      
+      // Set default consent state for EEA compliance
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'wait_for_update': 500
+      });
+
+      gtag('js', new Date());
+      gtag('config', 'G-L39135G3DR');
+    </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
