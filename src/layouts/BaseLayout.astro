@@ -91,6 +91,82 @@ const finalOgDescription = Astro.props.ogDescription ?? (type === 'website' ? og
       gtag('config', 'G-L39135G3DR');
     </script>
 
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "GrantWisdom",
+      "url": siteUrl,
+      "description": "AI-Powered Grant Search & Writing Intelligence",
+      "publisher": {
+        "@type": "Organization",
+        "name": "GrantWisdom",
+        "logo": {
+          "@type": "ImageObject",
+          "url": `${siteUrl}/favicon.svg`
+        }
+      }
+    })} />
+
+    {type === 'article' && (
+      <script type="application/ld+json" is:inline set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": title,
+        "description": description,
+        "image": ogImage,
+        "author": {
+          "@type": "Person",
+          "name": author
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "GrantWisdom",
+          "logo": {
+            "@type": "ImageObject",
+            "url": `${siteUrl}/favicon.svg`
+          }
+        },
+        "datePublished": publishedDate,
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": canonicalUrl
+        }
+      })} />
+    )}
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": siteUrl
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": `${siteUrl}/blog`
+        },
+        // Only include if deeper than /blog
+        ...(Astro.url.pathname !== '/blog' && Astro.url.pathname !== '/blog/' ? [
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": title,
+            "item": canonicalUrl
+          }
+        ] : [])
+      ]
+    })} />
+
+    <!-- JSON Feed -->
+    <link rel="alternate" type="application/feed+json" title="GrantWisdom Blog JSON Feed" href="/blog/feed.json" />
+
     <style is:global>
       :root {
         --accent-gradient: linear-gradient(

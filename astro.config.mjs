@@ -8,6 +8,10 @@ import mdx from '@astrojs/mdx';
 // https://astro.build/config
 export default defineConfig({
   base: '/blog/',
+  trailingSlash: 'always',
+  build: {
+    format: 'directory'
+  },
   integrations: [react(), sitemap(), mdx()],
   vite: {
     css: {
