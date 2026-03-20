@@ -8,11 +8,12 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && node scripts/ping-indexnow.mjs",
+    "build": "node scripts/generate-tags.mjs && astro build && node scripts/ping-indexnow.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/mdx": "^5.0.2",
     "@astrojs/react": "^5.0.0",
     "@astrojs/rss": "^4.0.17",
     "@astrojs/sitemap": "^3.7.1",

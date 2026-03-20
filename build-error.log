@@ -1,47 +1,63 @@
 
 > c-users-galaxy-grantwisdom-blog@0.0.1 build
-> astro build
+> astro build && node scripts/ping-indexnow.mjs
 
-[2m18:51:52[22m [34m[content][39m Syncing content
-[2m18:51:52[22m [34m[content][39m Synced content
-[2m18:51:52[22m [34m[types][39m Generated [2m424ms[22m
-[2m18:51:52[22m [34m[build][39m output: [34m"static"[39m
-[2m18:51:52[22m [34m[build][39m mode: [34m"static"[39m
-[2m18:51:52[22m [34m[build][39m directory: [34mC:\Users\Galaxy\grantwisdom-blog\dist\[39m
-[2m18:51:52[22m [34m[build][39m Collecting build info...
-[2m18:51:52[22m [34m[build][39m [32mΓ£ô Completed in 439ms.[39m
-[2m18:51:52[22m [34m[build][39m Building static entrypoints...
-[2m18:51:52[22m [34m[vite][39m [32mΓ£ô built in 897ms[39m
-[2m18:51:54[22m [34m[vite][39m [32mΓ£ô built in 1.72s[39m
-[2m18:51:54[22m [34m[build][39m Rearranging server assets...
+[2m00:47:18[22m [34m[vite][39m Re-optimizing dependencies because vite config has changed
+[2m00:47:19[22m [34m[content][39m Syncing content
+[2m00:47:19[22m [34m[content][39m Astro config changed
+[2m00:47:19[22m [34m[content][39m Content config changed
+[2m00:47:19[22m [34m[content][39m Clearing content store
+[InvalidContentEntryDataError] blog ΓåÆ finding-your-first-grant data does not match collection schema.
 
-[42m[30m generating static routes [39m[49m
-[2m18:51:54[22m   [34mΓö£ΓöÇ[39m [2m/blog/tag/ai/index.html[22m [2m(+23ms)[22m 
-[2m18:51:54[22m   [34mΓö£ΓöÇ[39m [2m/blog/tag/technology/index.html[22m [2m(+5ms)[22m 
-[2m18:51:54[22m   [34mΓö£ΓöÇ[39m [2m/blog/tag/automation/index.html[22m [2m(+4ms)[22m 
-[2m18:51:54[22m   [34mΓö£ΓöÇ[39m [2m/blog/tag/nonprofit/index.html[22m [2m(+4ms)[22m 
-[2m18:51:54[22m   [34mΓö£ΓöÇ[39m [2m/blog/tag/funding/index.html[22m [2m(+3ms)[22m 
-[2m18:51:54[22m   [34mΓö£ΓöÇ[39m [2m/blog/tag/2026/index.html[22m [2m(+3ms)[22m 
-[2m18:51:54[22m   [34mΓö£ΓöÇ[39m [2m/blog/tags/index.html[22m [2m(+5ms)[22m 
-[2m18:51:54[22m   [34mΓö£ΓöÇ[39m [2m/blog/technology/automation/ai-in-grant-writing/index.html[22m [2m(+4ms)[22m 
-[2m18:51:54[22m   [34mΓö£ΓöÇ[39m [2m/blog/technology/automation/finding-your-first-grant/index.html[22m [2m(+3ms)[22m 
-[2m18:51:54[22m   [34mΓö£ΓöÇ[39m [2m/blog/news/nonprofit/top-nonprofit-grants-2026/index.html[22m [2m(+4ms)[22m 
-[2m18:51:54[22m   [34mΓö£ΓöÇ[39m [2m/blog/technology/index.html[22m [2m(+3ms)[22m 
-[2m18:51:54[22m   [34mΓö£ΓöÇ[39m [2m/blog/news/index.html[22m [2m(+2ms)[22m 
-[2m18:51:54[22m   [34mΓö£ΓöÇ[39m [2m/blog/index.html[22m [2m(+5ms)[22m 
-[2m18:51:54[22m   [34mΓö£ΓöÇ[39m [2m/rss.xml[22m [2m(+22ms)[22m 
-[2m18:51:54[22m   [34mΓö£ΓöÇ[39m [2m/index.html[22m [2m(+6ms)[22m 
-[2m18:51:54[22m [32mΓ£ô Completed in 200ms.
-[39m
-[2m18:51:54[22m [34m[build][39m [32mΓ£ô Completed in 2.87s.[39m
-[2m18:51:54[22m [34m[@astrojs/sitemap][39m `sitemap-index.xml` created at `dist`
-18:51:54 [ERROR] [astro-indexnow] An unhandled error occurred while running the "astro:build:done" hook
-ENOENT: no such file or directory, scandir 'C:\C:\Users\Galaxy\grantwisdom-blog\dist\'
+  **: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "description"
+    ],
+    "message": "description: Required"
+  },
+  {
+    "code": "invalid_value",
+    "values": [
+      "grant-guides",
+      "grant-writing",
+      "grants-by-industry",
+      "grants-by-location",
+      "grants-by-demographic",
+      "grant-programs",
+      "grant-strategy"
+    ],
+    "path": [
+      "pillar"
+    ],
+    "message": "Invalid option: expected one of \"grant-guides\"|\"grant-writing\"|\"grants-by-industry\"|\"grants-by-location\"|\"grants-by-demographic\"|\"grant-programs\"|\"grant-strategy\""
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "publishedAt"
+    ],
+    "message": "publishedAt: Required"
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "slug"
+    ],
+    "message": "slug: Required"
+  }
+]
+
+  Hint:
+    See https://docs.astro.build/en/guides/content-collections/ for more information on content schemas.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/invalid-content-entry-data-error/
   Location:
-    C:\Users\Galaxy\grantwisdom-blog\node_modules\astro-indexnow\dist\index.js:92:44
+    C:\Users\Galaxy\grantwisdom-blog\src\content\blog\finding-your-first-grant.md:0:0
   Stack trace:
-    at Object.readdirSync (node:fs:1545:26)
-    at astro:build:done (file:///C:/Users/Galaxy/grantwisdom-blog/node_modules/astro-indexnow/dist/index.js:110:17)
-    at withTakingALongTimeMsg (file:///C:/Users/Galaxy/grantwisdom-blog/node_modules/astro/dist/integrations/hooks.js:33:18)
-    at runHookBuildDone (file:///C:/Users/Galaxy/grantwisdom-blog/node_modules/astro/dist/integrations/hooks.js:454:11)
-    at async AstroBuilder.build (file:///C:/Users/Galaxy/grantwisdom-blog/node_modules/astro/dist/core/build/index.js:168:5)
+    at getEntryData (C:\Users\Galaxy\grantwisdom-blog\node_modules\astro\dist\content\utils.js:123:16)
+    at async eval (C:\Users\Galaxy\grantwisdom-blog\node_modules\astro\dist\content\loaders\glob.js:211:13)
