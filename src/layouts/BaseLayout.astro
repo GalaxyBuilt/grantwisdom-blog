@@ -85,15 +85,44 @@ const fullTitle = `${title} | GrantWisdom`;
       gtag('config', 'G-L39135G3DR');
     </script>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:ital,wght@0,600;1,600&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <style is:global>
+      :root {
+        --accent-gradient: linear-gradient(
+          45deg,
+          hsl(var(--accent)),
+          hsl(var(--accent) / 0.8) 30%,
+          hsl(var(--background)) 60%
+        );
+      }
+      
+      html {
+        scroll-behavior: smooth;
+      }
+
+      ::selection {
+        background-color: hsl(var(--accent) / 0.2);
+        color: hsl(var(--accent));
+      }
+
+      .glass-card {
+        background: hsl(var(--card) / 0.7);
+        backdrop-filter: blur(12px);
+        border: 1px solid hsl(var(--border) / 0.5);
+      }
+
+      .text-gradient {
+        background: linear-gradient(135deg, hsl(var(--foreground)) 0%, hsl(var(--foreground) / 0.7) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
   </head>
-  <body class="antialiased font-sans bg-background text-foreground min-h-screen flex flex-col">
+  <body class="antialiased font-sans bg-background text-foreground min-h-screen flex flex-col relative overflow-x-hidden">
+    {/* Decorative Background Elements */}
+    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+      <div class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-accent/5 blur-[120px] rounded-full"></div>
+      <div class="absolute top-[20%] -right-[10%] w-[30%] h-[30%] bg-primary/5 blur-[100px] rounded-full"></div>
+    </div>
     <Navbar client:load />
     <main class="flex-grow">
       <slot />
