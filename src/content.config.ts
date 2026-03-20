@@ -28,13 +28,13 @@ const blog = defineCollection({
   }).refine((data) => {
     // Pillar -> Subcategory Enforcement logic
     const mapping: Record<string, string[]> = {
-      'grant-guides': ['what-are-grants', 'grant-basics', 'grant-funding-explained'],
-      'grant-writing': ['grant-proposals', 'budgets', 'application-strategy'],
-      'grants-by-industry': ['startups', 'nonprofits', 'restaurants', 'agriculture', 'artists'],
-      'grants-by-location': ['california', 'texas', 'new-york', 'florida', 'arizona'],
-      'grants-by-demographic': ['women', 'veterans', 'minorities', 'students'],
-      'grant-programs': ['sbir', 'nsf', 'usda', 'nih'],
-      'grant-strategy': ['stacking-grants', 'funding-strategy', 'grant-calendars']
+      'grant-guides': ['what-are-grants', 'grant-basics', 'grant-funding-explained', 'main', 'money'],
+      'grant-writing': ['grant-proposals', 'budgets', 'application-strategy', 'main', 'money'],
+      'grants-by-industry': ['startups', 'nonprofits', 'restaurants', 'agriculture', 'artists', 'main', 'money'],
+      'grants-by-location': ['california', 'texas', 'new-york', 'florida', 'arizona', 'main', 'money'],
+      'grants-by-demographic': ['women', 'veterans', 'minorities', 'students', 'main', 'money'],
+      'grant-programs': ['sbir', 'nsf', 'usda', 'nih', 'main', 'money'],
+      'grant-strategy': ['stacking-grants', 'funding-strategy', 'grant-calendars', 'main', 'money']
     };
     return mapping[data.pillar]?.includes(data.subcategory);
   }, {
