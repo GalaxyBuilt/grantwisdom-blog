@@ -44,9 +44,11 @@ import {
 
 // Fetch all blog posts
 const allPosts = await getCollection('blog');
-const posts = allPosts.sort((a, b) => 
-  new Date(b.data.publishedAt).getTime() - new Date(a.data.publishedAt).getTime()
-);
+const posts = allPosts
+  .filter(post => !post.data.draft)
+  .sort((a, b) => 
+    new Date(b.data.publishedAt).getTime() - new Date(a.data.publishedAt).getTime()
+  );
 
 // Get featured posts (most recent 3)
 const featuredPosts = posts.slice(0, 3);

@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
   const allTags = [...new Set(posts.flatMap(post => post.data.tags || []))];
   
   return allTags.map(tag => {

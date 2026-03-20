@@ -47,7 +47,7 @@ import {
 } from 'lucide-react';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
   const pillars = [...new Set(posts.map(post => post.data.pillar))];
   
   return pillars.map(pillar => {
