@@ -6,6 +6,8 @@ import '../styles/globals.css';
 interface Props {
   title: string;
   description?: string;
+  ogTitle?: string;
+  ogDescription?: string;
   image?: string;
   canonicalUrl?: string;
   type?: 'website' | 'article';
@@ -15,7 +17,9 @@ interface Props {
 
 const {
   title,
-  description = "Search 200,000+ grants worldwide. AI-powered matching and application drafts.",
+  description = "Search 200,000+ global grants with AI-powered matching. Generate high-quality grant application drafts in seconds. Find funding for startups, nonprofits, and research.",
+  ogTitle = "GrantWisdom | AI-Powered Grant Search & Writing",
+  ogDescription = "Access 200,000+ grants worldwide. Use AI to find the perfect match and draft your application.",
   image = "/og-main.png",
   type = "website",
   publishedDate,
@@ -26,6 +30,8 @@ const siteUrl = "https://grantwisdom.com";
 const canonicalUrl = Astro.props.canonicalUrl ?? new URL(Astro.url.pathname, siteUrl).toString();
 const ogImage = new URL(image, siteUrl).toString();
 const fullTitle = `${title} | GrantWisdom`;
+const finalOgTitle = Astro.props.ogTitle ?? (title?.includes("Blog") || !title ? ogTitle : fullTitle);
+const finalOgDescription = Astro.props.ogDescription ?? (type === 'website' ? ogDescription : description);
 ---
 
 <!doctype html>
@@ -44,15 +50,15 @@ const fullTitle = `${title} | GrantWisdom`;
     <!-- Open Graph -->
     <meta property="og:type" content={type} />
     <meta property="og:url" content={canonicalUrl} />
-    <meta property="og:title" content={fullTitle} />
-    <meta property="og:description" content={description} />
+    <meta property="og:title" content={finalOgTitle} />
+    <meta property="og:description" content={finalOgDescription} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:site_name" content="GrantWisdom" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={fullTitle} />
-    <meta name="twitter:description" content={description} />
+    <meta name="twitter:title" content={finalOgTitle} />
+    <meta name="twitter:description" content={finalOgDescription} />
     <meta name="twitter:image" content={ogImage} />
 
     <!-- Article-specific -->

@@ -2,7 +2,7 @@ import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
 const blog = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './public/blog' }),
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/blog' }),
   schema: z.object({
     title: z.string(),
     description: z.string().min(50).max(160),
@@ -20,7 +20,8 @@ const blog = defineCollection({
     publishedAt: z.string(), // YYYY-MM-DD
     updatedAt: z.string().optional(),
     author: z.string(),
-    slug: z.string(), // auto-generated from title logic should be handled by the user/AI during content creation
+    slug: z.string(),
+    type: z.enum(['hub', 'money', 'article']),
     featuredImage: z.string().optional(),
     seoTitle: z.string().optional(),
     seoDescription: z.string().optional(),
@@ -28,13 +29,13 @@ const blog = defineCollection({
   }).refine((data) => {
     // Pillar -> Subcategory Enforcement logic
     const mapping: Record<string, string[]> = {
-      'grant-guides': ['what-are-grants', 'grant-basics', 'grant-funding-explained', 'main', 'money'],
-      'grant-writing': ['grant-proposals', 'budgets', 'application-strategy', 'main', 'money'],
-      'grants-by-industry': ['startups', 'nonprofits', 'restaurants', 'agriculture', 'artists', 'main', 'money'],
-      'grants-by-location': ['california', 'texas', 'new-york', 'florida', 'arizona', 'main', 'money'],
-      'grants-by-demographic': ['women', 'veterans', 'minorities', 'students', 'main', 'money'],
-      'grant-programs': ['sbir', 'nsf', 'usda', 'nih', 'main', 'money'],
-      'grant-strategy': ['stacking-grants', 'funding-strategy', 'grant-calendars', 'main', 'money']
+      'grant-guides': ['what-are-grants', 'grant-basics', 'grant-funding-explained', 'index', 'grant-research'],
+      'grant-writing': ['grant-proposals', 'budgets', 'application-strategy', 'index', 'writing-services'],
+      'grants-by-industry': ['startups', 'nonprofits', 'restaurants', 'agriculture', 'artists', 'index', 'industry-consulting'],
+      'grants-by-location': ['california', 'texas', 'new-york', 'florida', 'arizona', 'index', 'search-services'],
+      'grants-by-demographic': ['women', 'veterans', 'minorities', 'students', 'index', 'matching-services'],
+      'grant-programs': ['sbir', 'nsf', 'usda', 'nih', 'index', 'grant-navigation'],
+      'grant-strategy': ['stacking-grants', 'funding-strategy', 'grant-calendars', 'index', 'grant-consulting']
     };
     return mapping[data.pillar]?.includes(data.subcategory);
   }, {

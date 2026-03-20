@@ -3,66 +3,67 @@
 > node scripts/generate-tags.mjs && astro build && node scripts/ping-indexnow.mjs
 
 Γ£à Generated tags.json and tag-cloud.json
-[2m04:34:03[22m [34m[vite][39m Re-optimizing dependencies because vite config has changed
-[2m04:34:03[22m [34m[content][39m Syncing content
-[2m04:34:03[22m [34m[content][39m Synced content
-[2m04:34:03[22m [34m[types][39m Generated [2m561ms[22m
-[2m04:34:03[22m [34m[build][39m output: [34m"static"[39m
-[2m04:34:03[22m [34m[build][39m mode: [34m"static"[39m
-[2m04:34:03[22m [34m[build][39m directory: [34mC:\Users\Galaxy\grantwisdom-blog\dist\[39m
-[2m04:34:03[22m [34m[build][39m Collecting build info...
-[2m04:34:03[22m [34m[build][39m [32mΓ£ô Completed in 582ms.[39m
-[2m04:34:03[22m [34m[build][39m Building static entrypoints...
-[2m04:34:05[22m [34m[vite][39m [32mΓ£ô built in 1.71s[39m
-[2m04:34:07[22m [34m[vite][39m [32mΓ£ô built in 1.88s[39m
-[2m04:34:07[22m [34m[build][39m Rearranging server assets...
+[2m04:40:08[22m [34m[vite][39m Re-optimizing dependencies because vite config has changed
+[2m04:40:09[22m [34m[content][39m Syncing content
+[2m04:40:09[22m [34m[content][39m Content config changed
+[2m04:40:09[22m [34m[content][39m Clearing content store
+[2m04:40:09[22m [34m[content][39m Synced content
+[2m04:40:09[22m [34m[types][39m Generated [2m529ms[22m
+[2m04:40:09[22m [34m[build][39m output: [34m"static"[39m
+[2m04:40:09[22m [34m[build][39m mode: [34m"static"[39m
+[2m04:40:09[22m [34m[build][39m directory: [34mC:\Users\Galaxy\grantwisdom-blog\dist\[39m
+[2m04:40:09[22m [34m[build][39m Collecting build info...
+[2m04:40:09[22m [34m[build][39m [32mΓ£ô Completed in 554ms.[39m
+[2m04:40:09[22m [34m[build][39m Building static entrypoints...
+[2m04:40:10[22m [34m[vite][39m [32mΓ£ô built in 1.63s[39m
+[2m04:40:12[22m [34m[vite][39m [32mΓ£ô built in 1.69s[39m
+[2m04:40:12[22m [34m[build][39m Rearranging server assets...
 
 [42m[30m generating static routes [39m[49m
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/tag/ai/index.html[22m [2m(+28ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/tag/grant-writing/index.html[22m [2m(+5ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/tag/technology/index.html[22m [2m(+4ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/tag/money/index.html[22m [2m(+5ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/tag/main-page/index.html[22m [2m(+6ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/tag/guides/index.html[22m [2m(+4ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/tag/funding/index.html[22m [2m(+3ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/tag/basics/index.html[22m [2m(+4ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/tag/hub/index.html[22m [2m(+5ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/tag/nonprofit/index.html[22m [2m(+4ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/tag/2026/index.html[22m [2m(+3ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/tags/index.html[22m [2m(+6ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grant-writing/application-strategy/ai-in-grant-writing/index.html[22m [2m(+10ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grants-by-demographic/money/demographic-grant-matching-services/index.html[22m [2m(+10ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grant-guides/grant-basics/finding-your-first-grant/index.html[22m [2m(+8ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grant-programs/money/grant-program-navigation-services/index.html[22m [2m(+8ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grant-guides/money/grant-research-and-application-services/index.html[22m [2m(+9ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grant-strategy/main/grant-strategy-building-a-winning-funding-plan/index.html[22m [2m(+7ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grant-strategy/money/grant-strategy-consulting-build-a-funding-plan/index.html[22m [2m(+8ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grant-writing/main/grant-writing-mastery-how-to-write-proposals-that-win-funding/index.html[22m [2m(+10ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grants-by-demographic/main/grants-by-demographic-funding-for-every-background/index.html[22m [2m(+10ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grants-by-industry/main/grants-by-industry-find-funding-specific-to-your-sector/index.html[22m [2m(+9ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grants-by-location/main/grants-by-location-state-local-and-regional-funding/index.html[22m [2m(+8ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grants-by-industry/money/industry-grant-consulting-targeted-funding-support/index.html[22m [2m(+6ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grants-by-location/money/local-and-state-grant-search-services/index.html[22m [2m(+7ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grant-programs/main/major-grant-programs-comprehensive-overview/index.html[22m [2m(+7ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grant-writing/money/professional-grant-writing-services/index.html[22m [2m(+7ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grant-guides/main/the-ultimate-guide-to-finding-and-winning-grants/index.html[22m [2m(+7ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grants-by-industry/nonprofits/top-nonprofit-grants-2026/index.html[22m [2m(+6ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grant-writing/index.html[22m [2m(+10ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grants-by-demographic/index.html[22m [2m(+4ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grant-guides/index.html[22m [2m(+6ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grant-programs/index.html[22m [2m(+5ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grant-strategy/index.html[22m [2m(+5ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grants-by-industry/index.html[22m [2m(+6ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/grants-by-location/index.html[22m [2m(+5ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/blog/index.html[22m [2m(+8ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/rss.xml[22m [2m(+33ms)[22m 
-[2m04:34:07[22m   [34mΓö£ΓöÇ[39m [2m/index.html[22m [2m(+11ms)[22m 
-[2m04:34:07[22m [32mΓ£ô Completed in 443ms.
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/rss.xml[22m [2m(+35ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/tag/ai/index.html[22m [2m(+21ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/tag/grant-writing/index.html[22m [2m(+5ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/tag/technology/index.html[22m [2m(+4ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/tag/money/index.html[22m [2m(+5ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/tag/main-page/index.html[22m [2m(+6ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/tag/guides/index.html[22m [2m(+3ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/tag/funding/index.html[22m [2m(+3ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/tag/basics/index.html[22m [2m(+3ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/tag/hub/index.html[22m [2m(+4ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/tag/nonprofit/index.html[22m [2m(+3ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/tag/2026/index.html[22m [2m(+3ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/tags/index.html[22m [2m(+5ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grant-writing/application-strategy/ai-in-grant-writing/index.html[22m [2m(+10ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grants-by-demographic/money/demographic-grant-matching-services/index.html[22m [2m(+8ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grant-guides/grant-basics/finding-your-first-grant/index.html[22m [2m(+9ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grant-programs/money/grant-program-navigation-services/index.html[22m [2m(+7ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grant-guides/money/grant-research-and-application-services/index.html[22m [2m(+8ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grant-strategy/main/grant-strategy-building-a-winning-funding-plan/index.html[22m [2m(+7ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grant-strategy/money/grant-strategy-consulting-build-a-funding-plan/index.html[22m [2m(+7ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grant-writing/main/grant-writing-mastery-how-to-write-proposals-that-win-funding/index.html[22m [2m(+7ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grants-by-demographic/main/grants-by-demographic-funding-for-every-background/index.html[22m [2m(+7ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grants-by-industry/main/grants-by-industry-find-funding-specific-to-your-sector/index.html[22m [2m(+8ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grants-by-location/main/grants-by-location-state-local-and-regional-funding/index.html[22m [2m(+9ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grants-by-industry/money/industry-grant-consulting-targeted-funding-support/index.html[22m [2m(+8ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grants-by-location/money/local-and-state-grant-search-services/index.html[22m [2m(+7ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grant-programs/main/major-grant-programs-comprehensive-overview/index.html[22m [2m(+7ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grant-writing/money/professional-grant-writing-services/index.html[22m [2m(+7ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grant-guides/main/the-ultimate-guide-to-finding-and-winning-grants/index.html[22m [2m(+7ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grants-by-industry/nonprofits/top-nonprofit-grants-2026/index.html[22m [2m(+7ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grant-writing/index.html[22m [2m(+7ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grants-by-demographic/index.html[22m [2m(+5ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grant-guides/index.html[22m [2m(+6ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grant-programs/index.html[22m [2m(+7ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grant-strategy/index.html[22m [2m(+5ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grants-by-industry/index.html[22m [2m(+5ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/grants-by-location/index.html[22m [2m(+4ms)[22m 
+[2m04:40:12[22m   [34mΓö£ΓöÇ[39m [2m/index.html[22m [2m(+10ms)[22m 
+[2m04:40:12[22m [32mΓ£ô Completed in 410ms.
 [39m
-[2m04:34:07[22m [34m[build][39m [32mΓ£ô Completed in 4.10s.[39m
-[33m[1m04:34:07[22m [WARN] [@astrojs/sitemap][39m The Sitemap integration requires the `site` astro.config option. Skipping.
-[2m04:34:07[22m [34m[build][39m 38 page(s) built in [1m4.72s[22m
-[2m04:34:07[22m [34m[build][39m [1mComplete![22m
+[2m04:40:12[22m [34m[build][39m [32mΓ£ô Completed in 3.78s.[39m
+[33m[1m04:40:12[22m [WARN] [@astrojs/sitemap][39m The Sitemap integration requires the `site` astro.config option. Skipping.
+[2m04:40:12[22m [34m[build][39m 37 page(s) built in [1m4.36s[22m
+[2m04:40:12[22m [34m[build][39m [1mComplete![22m
 Submitting sitemap to IndexNow API...
 IndexNow API Response Status: 200
 Γ£à Successfully pinged IndexNow!
