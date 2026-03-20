@@ -22,7 +22,7 @@ const {
   author = "GrantWisdom Team",
 } = Astro.props;
 
-const siteUrl = "https://grantwisdom-blog.pages.dev";
+const siteUrl = "https://grantwisdom.com";
 const canonicalUrl = Astro.props.canonicalUrl ?? new URL(Astro.url.pathname, siteUrl).toString();
 const ogImage = new URL(image, siteUrl).toString();
 const fullTitle = `${title} | GrantWisdom`;
