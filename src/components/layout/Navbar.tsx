@@ -38,6 +38,7 @@ export function Navbar() {
             <Sprout className="h-4 w-4 text-white" />
           </div>
           <span>GrantWisdom</span>
+          <span className="text-[10px] bg-secondary px-1.5 py-0.5 rounded-md font-medium text-muted-foreground ml-1">BETA</span>
         </a>
 
         {/* Desktop Nav */}

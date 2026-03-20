@@ -14,6 +14,7 @@ export function Footer() {
                 <Sprout className="h-4 w-4 text-white" />
               </div>
               <span className="font-bold text-lg text-foreground">GrantWisdom</span>
+              <span className="text-[10px] bg-secondary px-1.5 py-0.5 rounded-md font-medium text-muted-foreground ml-1">BETA</span>
             </a>
             <p className="text-muted-foreground text-sm">
               Discover and manage grants worldwide with our comprehensive platform.
@@ -86,7 +87,7 @@ export function Footer() {
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-col items-start gap-1">
             <p className="text-muted-foreground text-sm">
-              © {currentYear} GrantWisdom. All rights reserved.
+              © {currentYear} GrantWisdom (BETA). All rights reserved.
             </p>
             <p className="text-xs text-muted-foreground flex items-center gap-1">
               Powered by <a href="https://EverRank.app" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">EverRank</a> 
