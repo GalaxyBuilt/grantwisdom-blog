@@ -5,7 +5,7 @@ async function generateTags() {
   // Note: Since this is a standalone script, we might not have easy access to getCollection
   // without a complex setup. However, we can just read the files directly from src/content/blog.
   
-  const blogDir = path.join(process.cwd(), 'src/content/blog');
+  const blogDir = path.join(process.cwd(), 'public/blog');
   const tagCounts = {};
 
   function walk(dir) {

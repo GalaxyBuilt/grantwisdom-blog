@@ -5,7 +5,7 @@ export async function GET(context) {
   const posts = await getCollection('blog');
 
   // Sort newest first
-  posts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+  posts.sort((a, b) => new Date(b.data.publishedAt).getTime() - new Date(a.data.publishedAt).getTime());
 
   return rss({
     title: 'GrantWisdom Blog',
@@ -15,11 +15,12 @@ export async function GET(context) {
     stylesheet: '/rss-styles.xsl',
     items: posts.map((post) => ({
       title: post.data.title,
-      pubDate: new Date(post.data.date),
-      description: post.data.excerpt,
-      categories: [post.data.category, post.data.pillar, post.data.subcategory],
+      pubDate: new Date(post.data.publishedAt),
+      description: post.data.description,
+      customData: post.data.customData,
+      categories: [post.data.pillar, post.data.subcategory],
       author: post.data.author,
-      link: `/${post.data.pillar}/${post.data.subcategory}/${post.id}/`,
+      link: `/blog/${post.data.pillar}/${post.data.subcategory}/${post.data.slug}/`,
     })),
   });
 }

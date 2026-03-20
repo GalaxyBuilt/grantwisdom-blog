@@ -2,7 +2,7 @@ import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
 const blog = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/blog' }),
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './public/blog' }),
   schema: z.object({
     title: z.string(),
     description: z.string().min(50).max(160),
@@ -21,7 +21,7 @@ const blog = defineCollection({
     updatedAt: z.string().optional(),
     author: z.string(),
     slug: z.string(), // auto-generated from title logic should be handled by the user/AI during content creation
-    featuredImage: z.string().url().optional(),
+    featuredImage: z.string().optional(),
     seoTitle: z.string().optional(),
     seoDescription: z.string().optional(),
     canonicalUrl: z.string().url().optional(),
