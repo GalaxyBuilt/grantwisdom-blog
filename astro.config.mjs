@@ -9,7 +9,7 @@ import mdx from '@astrojs/mdx';
 export default defineConfig({
   site: 'https://grantwisdom.com',
   base: '/blog/',
-  trailingSlash: 'always',
+  trailingSlash: 'ignore',
   build: {
     format: 'directory'
   },
