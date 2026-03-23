@@ -45,7 +45,7 @@ import {
 // Fetch all blog posts
 const allPosts = await getCollection('blog');
 const posts = allPosts
-  .filter(post => !post.data.draft)
+  .filter(post => !post.data.draft && post.data.type !== 'hub')
   .sort((a, b) => 
     new Date(b.data.publishedAt).getTime() - new Date(a.data.publishedAt).getTime()
   );
@@ -156,7 +156,7 @@ const recentMonths = Object.entries(postsByMonth).slice(0, 4);
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20">
         <!-- Breadcrumb -->
         <div class="flex items-center gap-2 text-sm text-muted-foreground mb-8">
-          <a href="/" class="hover:text-primary transition-colors">Home</a>
+          <a href="https://grantwisdom.com/" class="hover:text-primary transition-colors">Home</a>
           <ChevronRight class="h-4 w-4" />
           <span class="text-primary font-medium">Blog</span>
         </div>
@@ -302,7 +302,7 @@ const recentMonths = Object.entries(postsByMonth).slice(0, 4);
     </section>
 
     <!-- Latest Articles with filters -->
-    <section class="bg-secondary/40 border-y border-border">
+    <section id="latest-articles" class="bg-secondary/40 border-y border-border">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div class="flex items-center justify-between mb-12">
           <div>
@@ -383,7 +383,7 @@ const recentMonths = Object.entries(postsByMonth).slice(0, 4);
         {/* View all button */}
         <div class="text-center mt-12">
           <a 
-            href="/blog/" 
+            href="/blog/articles/" 
             class="inline-flex items-center gap-2 px-6 py-3 bg-card border border-border rounded-xl hover:border-primary/30 hover:shadow-lg transition-all group"
           >
             <span class="font-medium">View All Articles</span>
@@ -473,7 +473,7 @@ const recentMonths = Object.entries(postsByMonth).slice(0, 4);
         <p class="text-muted-foreground mb-8">
           Put these insights into action. Search 200,000+ active grants right now.
         </p>
-        <a href="/grants">
+        <a href="https://grantwisdom.com/grants">
           <button class="h-14 px-8 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 transition-colors inline-flex items-center gap-2 text-lg">
             Search Grants
             <ArrowRight class="h-5 w-5" />

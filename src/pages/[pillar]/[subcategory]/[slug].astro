@@ -51,11 +51,11 @@ const pillarLabels: Record<string, string> = {
     <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
       <!-- Back / Breadcrumb -->
       <nav class="flex items-center gap-2 text-sm text-muted-foreground mb-12">
-        <a href="/blog" class="hover:text-primary transition-colors flex items-center gap-1">
+        <a href="/blog/" class="hover:text-primary transition-colors flex items-center gap-1">
           <ArrowLeft class="w-4 h-4" /> Blog
         </a>
         <span>/</span>
-        <a href={`/blog/${pillar}`} class="hover:text-primary transition-colors capitalize">
+        <a href={`/blog/${pillar}/`} class="hover:text-primary transition-colors capitalize">
           {pillarLabels[pillar] || pillar.replace(/-/g, ' ')}
         </a>
         <span>/</span>
@@ -124,7 +124,7 @@ const pillarLabels: Record<string, string> = {
           {/* Tags */}
           <div class="mt-16 pt-8 border-t border-border flex flex-wrap gap-2">
             {post.data.tags.map(tag => (
-              <a href={`/blog/tag/${tag}`} class="px-4 py-1.5 rounded-full bg-secondary border border-border text-sm font-medium text-muted-foreground hover:border-primary/30 hover:text-primary transition-all">
+              <a href={`/blog/tag/${tag}/`} class="px-4 py-1.5 rounded-full bg-secondary border border-border text-sm font-medium text-muted-foreground hover:border-primary/30 hover:text-primary transition-all">
                 #{tag}
               </a>
             ))}
@@ -154,8 +154,8 @@ const pillarLabels: Record<string, string> = {
               <div class="mt-12 p-6 rounded-2xl bg-gradient-to-br from-primary to-primary/80 text-white shadow-xl shadow-primary/20">
                 <h5 class="font-bold mb-2">Need a Grant?</h5>
                 <p class="text-xs text-white/80 mb-4 leading-relaxed">Search 200,000+ active grants and get AI-matched today.</p>
-                <a href="/grants" class="inline-flex items-center gap-1.5 text-xs font-bold bg-white text-primary px-4 py-2 rounded-lg hover:bg-opacity-90 transition-all">
-                  Search Now <ArrowRight class="w-3.5 h-3.5" />
+                <a href="https://grantwisdom.com/grants" class="inline-flex items-center gap-1.5 text-xs font-bold bg-white text-primary px-4 py-2 rounded-lg hover:bg-opacity-90 transition-all">
+                  Search Now <ArrowRight class="w-3.5 w-3.5" />
                 </a>
               </div>
             </div>

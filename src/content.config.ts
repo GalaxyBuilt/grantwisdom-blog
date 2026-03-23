@@ -23,6 +23,7 @@ const blog = defineCollection({
     slug: z.string(),
     type: z.enum(['hub', 'money', 'article']),
     featuredImage: z.string().optional(),
+    draft: z.boolean().default(false),
     seoTitle: z.string().optional(),
     seoDescription: z.string().optional(),
     canonicalUrl: z.string().url().optional(),

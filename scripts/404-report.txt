@@ -1,0 +1,82 @@
+# 404 Report
+Generated: 2026-03-20T15:38:35.493Z
+Dist: C:\Users\Galaxy\grantwisdom-blog\dist
+
+Pages scanned: 25
+Links checked: 642
+
+Base: /
+404s found: 50
+- internal: /blog/
+- internal: /blog/_astro/BaseLayout.DFm4npE8.css
+- internal: /blog/favicon.svg
+- internal: /blog/feed.json
+- internal: /blog/grant-guides
+- internal: /blog/grant-guides/
+- internal: /blog/grant-guides/grant-research
+- internal: /blog/grant-guides/grant-research/grant-research-and-application-services
+- internal: /blog/grant-guides/grant-research/grant-research-and-application-services/
+- internal: /blog/grant-programs
+- internal: /blog/grant-programs/
+- internal: /blog/grant-programs/grant-navigation
+- internal: /blog/grant-programs/grant-navigation/grant-program-navigation-services
+- internal: /blog/grant-programs/grant-navigation/grant-program-navigation-services/
+- internal: /blog/grant-strategy
+- internal: /blog/grant-strategy/
+- internal: /blog/grant-strategy/grant-consulting
+- internal: /blog/grant-strategy/grant-consulting/grant-strategy-consulting-build-a-funding-plan
+- internal: /blog/grant-strategy/grant-consulting/grant-strategy-consulting-build-a-funding-plan/
+- internal: /blog/grant-writing
+- internal: /blog/grant-writing/
+- internal: /blog/grant-writing/writing-services
+- internal: /blog/grant-writing/writing-services/professional-grant-writing-services
+- internal: /blog/grant-writing/writing-services/professional-grant-writing-services/
+- internal: /blog/grants-by-demographic
+- internal: /blog/grants-by-demographic/
+- internal: /blog/grants-by-demographic/matching-services
+- internal: /blog/grants-by-demographic/matching-services/demographic-grant-matching-services
+- internal: /blog/grants-by-demographic/matching-services/demographic-grant-matching-services/
+- internal: /blog/grants-by-industry
+- internal: /blog/grants-by-industry/
+- internal: /blog/grants-by-industry/industry-consulting
+- internal: /blog/grants-by-industry/industry-consulting/industry-grant-consulting-targeted-funding-support
+- internal: /blog/grants-by-industry/industry-consulting/industry-grant-consulting-targeted-funding-support/
+- internal: /blog/grants-by-location
+- internal: /blog/grants-by-location/
+- internal: /blog/grants-by-location/search-services
+- internal: /blog/grants-by-location/search-services/local-and-state-grant-search-services
+- internal: /blog/grants-by-location/search-services/local-and-state-grant-search-services/
+- internal: /blog/images/blog/grant-guides/grant-research/grant-research-and-application-services.png
+- internal: /blog/images/blog/grant-programs/grant-navigation/grant-program-navigation-services.png
+- internal: /blog/images/blog/grant-strategy/grant-consulting/grant-strategy-consulting-build-a-funding-plan.png
+- internal: /blog/images/blog/grant-writing/writing-services/professional-grant-writing-services.png
+- internal: /blog/images/blog/grants-by-demographic/matching-services/demographic-grant-matching-services.png
+- internal: /blog/images/blog/grants-by-industry/industry-consulting/industry-grant-consulting-targeted-funding-support.png
+- internal: /blog/images/blog/grants-by-location/search-services/local-and-state-grant-search-services.png
+- internal: /blog/rss.xml
+- internal: /blog/tag/main-page/
+- internal: /blog/tag/money/
+- internal: /blog/tags/
+
+Base: /blog
+404s found: 0
+No 404s found for this base.
+
+External 404s: 1
+- https://grantwisdom.com/blog/tags/
+
+Other failures (non-404 or network):
+- external: https://grantwisdom.com/blog/grant-guides/grant-research/grant-research-and-application-services/ [status=-1, error=fetch failed]
+- external: https://grantwisdom.com/blog/grant-programs/ [status=-1, error=fetch failed]
+- external: https://grantwisdom.com/blog/grant-strategy/grant-consulting/grant-strategy-consulting-build-a-funding-plan/ [status=-1, error=fetch failed]
+- external: https://grantwisdom.com/blog/grant-programs/grant-navigation/grant-program-navigation-services/ [status=-1, error=fetch failed]
+- external: https://grantwisdom.com/blog/grant-guides/ [status=-1, error=fetch failed]
+- external: https://grantwisdom.com/blog/grant-strategy/ [status=-1, error=fetch failed]
+- external: https://grantwisdom.com/blog/grants-by-demographic/ [status=-1, error=fetch failed]
+- external: https://grantwisdom.com/blog/grant-writing/ [status=-1, error=fetch failed]
+- external: https://grantwisdom.com/blog/grants-by-industry/ [status=-1, error=fetch failed]
+- external: https://grantwisdom.com/blog/grants-by-demographic/matching-services/demographic-grant-matching-services/ [status=-1, error=fetch failed]
+- external: https://grantwisdom.com/blog/grant-writing/writing-services/professional-grant-writing-services/ [status=-1, error=fetch failed]
+- external: https://grantwisdom.com/blog/grants-by-location/search-services/local-and-state-grant-search-services/ [status=-1, error=fetch failed]
+- external: https://grantwisdom.com/blog/grants-by-industry/industry-consulting/industry-grant-consulting-targeted-funding-support/ [status=-1, error=fetch failed]
+- external: https://grantwisdom.com/blog/grants-by-location/ [status=-1, error=fetch failed]

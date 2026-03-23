@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <a href="/" className="flex items-center gap-2 mb-4">
+            <a href="https://grantwisdom.com/" className="flex items-center gap-2 mb-4">
               <div className="h-7 w-7 rounded-lg bg-primary flex items-center justify-center">
                 <Sprout className="h-4 w-4 text-white" />
               </div>
@@ -26,17 +26,17 @@ export function Footer() {
             <h3 className="font-semibold text-foreground mb-4">Product</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/grants" className="text-muted-foreground hover:text-accent text-sm transition-colors">
+                <a href="https://grantwisdom.com/grants" className="text-muted-foreground hover:text-accent text-sm transition-colors">
                   Grants
                 </a>
               </li>
               <li>
-                <a href="/pricing" className="text-muted-foreground hover:text-accent text-sm transition-colors">
+                <a href="https://grantwisdom.com/pricing" className="text-muted-foreground hover:text-accent text-sm transition-colors">
                   Pricing
                 </a>
               </li>
               <li>
-                <a href="/features" className="text-muted-foreground hover:text-accent text-sm transition-colors">
+                <a href="https://grantwisdom.com/features" className="text-muted-foreground hover:text-accent text-sm transition-colors">
                   Features
                 </a>
               </li>
@@ -48,17 +48,17 @@ export function Footer() {
             <h3 className="font-semibold text-foreground mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/about" className="text-muted-foreground hover:text-accent text-sm transition-colors">
+                <a href="https://grantwisdom.com/about" className="text-muted-foreground hover:text-accent text-sm transition-colors">
                   About
                 </a>
               </li>
               <li>
-                <a href="/blog" className="text-muted-foreground hover:text-accent text-sm transition-colors">
+                <a href="https://grantwisdom.com/blog/" className="text-muted-foreground hover:text-accent text-sm transition-colors">
                   Blog
                 </a>
               </li>
               <li>
-                <a href="/contact" className="text-muted-foreground hover:text-accent text-sm transition-colors">
+                <a href="https://grantwisdom.com/contact" className="text-muted-foreground hover:text-accent text-sm transition-colors">
                   Contact
                 </a>
               </li>
@@ -70,12 +70,12 @@ export function Footer() {
             <h3 className="font-semibold text-foreground mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/privacy" className="text-muted-foreground hover:text-accent text-sm transition-colors">
+                <a href="https://grantwisdom.com/privacy" className="text-muted-foreground hover:text-accent text-sm transition-colors">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="/terms" className="text-muted-foreground hover:text-accent text-sm transition-colors">
+                <a href="https://grantwisdom.com/terms" className="text-muted-foreground hover:text-accent text-sm transition-colors">
                   Terms of Service
                 </a>
               </li>

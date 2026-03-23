@@ -1,0 +1,79 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { ArrowRight, Clock, ChevronRight } from 'lucide-react';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft && data.type !== 'hub');
+  const groups = new Map();
+  for (const post of posts) {
+    const key = `${post.data.pillar}__${post.data.subcategory}`;
+    if (!groups.has(key)) groups.set(key, { pillar: post.data.pillar, subcategory: post.data.subcategory, posts: [] });
+    groups.get(key).posts.push(post);
+  }
+  return [...groups.values()].map(g => ({ params: { pillar: g.pillar, subcategory: g.subcategory }, props: { posts: g.posts } }));
+}
+
+const { pillar, subcategory } = Astro.params;
+const { posts } = Astro.props;
+
+const labelize = (s: string) => s.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+const pillarLabels: Record<string, string> = {
+  'grant-guides': 'Grant Guides',
+  'grant-writing': 'Grant Writing',
+  'grants-by-industry': 'By Industry',
+  'grants-by-location': 'By Location',
+  'grants-by-demographic': 'By Demographic',
+  'grant-programs': 'Grant Programs',
+  'grant-strategy': 'Grant Strategy'
+};
+---
+
+<BaseLayout title={`${labelize(subcategory)} | ${pillarLabels[pillar] || labelize(pillar)} | Blog`}>
+  <main class="flex-grow bg-background">
+    <section class="border-b border-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-10">
+        <div class="flex items-center gap-2 text-sm text-muted-foreground mb-6">
+          <a href="https://grantwisdom.com/" class="hover:text-primary transition-colors">Home</a>
+          <ChevronRight class="h-4 w-4" />
+          <a href="/blog/" class="hover:text-primary transition-colors">Blog</a>
+          <ChevronRight class="h-4 w-4" />
+          <a href={`/blog/${pillar}/`} class="hover:text-primary transition-colors">{pillarLabels[pillar] || labelize(pillar)}</a>
+          <ChevronRight class="h-4 w-4" />
+          <span class="text-primary font-medium">{labelize(subcategory)}</span>
+        </div>
+
+        <h1 class="font-display text-4xl sm:text-5xl text-foreground mb-2">{labelize(subcategory)}</h1>
+        <p class="text-muted-foreground">Articles in {pillarLabels[pillar] || labelize(pillar)} / {labelize(subcategory)}</p>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      {posts.length === 0 ? (
+        <p class="text-muted-foreground">No articles yet.</p>
+      ) : (
+        <div class="grid lg:grid-cols-3 gap-8">
+          {posts.sort((a, b) => new Date(b.data.publishedAt).getTime() - new Date(a.data.publishedAt).getTime()).map(post => (
+            <a href={`/blog/${post.data.pillar}/${post.data.subcategory}/${post.data.slug}/`} class="group bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300">
+              {post.data.featuredImage ? (
+                <div class="aspect-[16/9] overflow-hidden">
+                  <img src={post.data.featuredImage} alt={post.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+              ) : null}
+              <div class="p-6">
+                <div class="flex items-center gap-2 text-xs text-muted-foreground mb-3">
+                  <span class="px-2 py-1 rounded-full bg-secondary text-foreground font-medium">{labelize(subcategory)}</span>
+                  <span>•</span>
+                  <span class="flex items-center gap-1"><Clock class="h-3 w-3" />{new Date(post.data.publishedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+                </div>
+                <h3 class="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2">{post.data.title}</h3>
+                <p class="text-sm text-muted-foreground mb-4 line-clamp-2">{post.data.description}</p>
+                <span class="inline-flex items-center gap-1 text-sm text-primary opacity-0 group-hover:opacity-100 transition-opacity">Read <ArrowRight class="h-4 w-4" /></span>
+              </div>
+            </a>
+          ))}
+        </div>
+      )}
+    </section>
+  </main>
+</BaseLayout>

@@ -4,10 +4,10 @@ import { Button } from "../ui/button";
 import { cn } from "../../lib/utils";
 
 const navLinks = [
-  { href: "/blog", label: "Blog Home" },
-  { href: "/grants", label: "Search Grants" },
-  { href: "/pricing", label: "Pricing" },
-  { href: "/about", label: "About" },
+  { href: "/blog/", label: "Blog Home" },
+  { href: "https://grantwisdom.com/grants", label: "Search Grants" },
+  { href: "https://grantwisdom.com/pricing", label: "Pricing" },
+  { href: "https://grantwisdom.com/about", label: "About" },
 ];
 
 export function Navbar() {
@@ -33,7 +33,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2 font-semibold text-foreground hover:opacity-80 transition-opacity">
+        <a href="/blog/" className="flex items-center gap-2 font-semibold text-foreground hover:opacity-80 transition-opacity">
           <div className="h-7 w-7 rounded-lg bg-primary flex items-center justify-center">
             <Sprout className="h-4 w-4 text-white" />
           </div>
@@ -68,10 +68,10 @@ export function Navbar() {
           >
             {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
-          <a href="/dashboard">
+          <a href="https://grantwisdom.com/dashboard">
             <Button variant="ghost" size="sm">Dashboard</Button>
           </a>
-          <a href="/grants">
+          <a href="https://grantwisdom.com/grants">
             <Button size="sm">
               <Search className="h-3.5 w-3.5" />
               Search Grants
@@ -107,10 +107,10 @@ export function Navbar() {
             </a>
           ))}
           <div className="pt-2 flex flex-col gap-2">
-            <a href="/dashboard" onClick={() => setMobileOpen(false)}>
+            <a href="https://grantwisdom.com/dashboard" onClick={() => setMobileOpen(false)}>
               <Button variant="outline" className="w-full">Dashboard</Button>
             </a>
-            <a href="/grants" onClick={() => setMobileOpen(false)}>
+            <a href="https://grantwisdom.com/grants" onClick={() => setMobileOpen(false)}>
               <Button className="w-full">Search Grants</Button>
             </a>
           </div>

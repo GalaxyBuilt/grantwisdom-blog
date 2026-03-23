@@ -10,7 +10,8 @@
     "start": "astro dev",
     "build": "node scripts/generate-tags.mjs && astro build && node scripts/ping-indexnow.mjs",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check:404": "node scripts/check-404s.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.2",

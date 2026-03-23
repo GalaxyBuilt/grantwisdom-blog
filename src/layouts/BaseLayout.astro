@@ -39,7 +39,11 @@ const finalOgDescription = Astro.props.ogDescription ?? (type === 'website' ? og
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/blog/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png" />
+    <link rel="manifest" href="/blog/site.webmanifest" />
     <meta name="generator" content={Astro.generator} />
 
     <!-- Primary Meta -->
@@ -70,7 +74,7 @@ const finalOgDescription = Astro.props.ogDescription ?? (type === 'website' ? og
     )}
 
     <!-- RSS Feed -->
-    <link rel="alternate" type="application/rss+xml" title="GrantWisdom Blog RSS" href="/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="GrantWisdom Blog RSS" href="/blog/rss.xml" />
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L39135G3DR"></script>

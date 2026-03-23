@@ -1,0 +1,385 @@
+{
+  "generatedAt": "2026-03-20T15:38:35.493Z",
+  "dist": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist",
+  "totals": {
+    "pages": 25,
+    "links_checked": 642,
+    "per_base": {
+      "/": {
+        "links_checked": 286,
+        "broken_404": 50
+      },
+      "/blog": {
+        "links_checked": 286,
+        "broken_404": 0
+      }
+    }
+  },
+  "per_base": {
+    "/": {
+      "broken_404": [
+        {
+          "type": "internal",
+          "path": "/blog/",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-guides\\grant-research\\grant-research-and-application-services\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/_astro/BaseLayout.DFm4npE8.css",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-guides\\grant-research\\grant-research-and-application-services\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/favicon.svg",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-guides\\grant-research\\grant-research-and-application-services\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/feed.json",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-guides\\grant-research\\grant-research-and-application-services\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-guides",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-guides\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-guides/",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-guides\\grant-research\\grant-research-and-application-services\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-guides/grant-research",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-guides\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-guides/grant-research/grant-research-and-application-services",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-guides/grant-research/grant-research-and-application-services/",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-guides\\grant-research\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-programs",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-programs\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-programs/",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-programs\\grant-navigation\\grant-program-navigation-services\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-programs/grant-navigation",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-programs\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-programs/grant-navigation/grant-program-navigation-services",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-programs/grant-navigation/grant-program-navigation-services/",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-programs\\grant-navigation\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-strategy",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-strategy\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-strategy/",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-strategy\\grant-consulting\\grant-strategy-consulting-build-a-funding-plan\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-strategy/grant-consulting",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-strategy\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-strategy/grant-consulting/grant-strategy-consulting-build-a-funding-plan",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-strategy/grant-consulting/grant-strategy-consulting-build-a-funding-plan/",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-strategy\\grant-consulting\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-writing",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-guides\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-writing/",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-writing\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-writing/writing-services",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-writing\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-writing/writing-services/professional-grant-writing-services",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\tag\\main-page\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grant-writing/writing-services/professional-grant-writing-services/",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-writing\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grants-by-demographic",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grants-by-demographic\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grants-by-demographic/",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grants-by-demographic\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grants-by-demographic/matching-services",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grants-by-demographic\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grants-by-demographic/matching-services/demographic-grant-matching-services",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grants-by-demographic/matching-services/demographic-grant-matching-services/",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grants-by-demographic\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grants-by-industry",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-guides\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grants-by-industry/",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grants-by-industry\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grants-by-industry/industry-consulting",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grants-by-industry\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grants-by-industry/industry-consulting/industry-grant-consulting-targeted-funding-support",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grants-by-industry/industry-consulting/industry-grant-consulting-targeted-funding-support/",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grants-by-industry\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grants-by-location",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-guides\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grants-by-location/",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grants-by-location\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grants-by-location/search-services",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grants-by-location\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grants-by-location/search-services/local-and-state-grant-search-services",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/grants-by-location/search-services/local-and-state-grant-search-services/",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grants-by-location\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/images/blog/grant-guides/grant-research/grant-research-and-application-services.png",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-guides\\grant-research\\grant-research-and-application-services\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/images/blog/grant-programs/grant-navigation/grant-program-navigation-services.png",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-programs\\grant-navigation\\grant-program-navigation-services\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/images/blog/grant-strategy/grant-consulting/grant-strategy-consulting-build-a-funding-plan.png",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-strategy\\grant-consulting\\grant-strategy-consulting-build-a-funding-plan\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/images/blog/grant-writing/writing-services/professional-grant-writing-services.png",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-writing\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/images/blog/grants-by-demographic/matching-services/demographic-grant-matching-services.png",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grants-by-demographic\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/images/blog/grants-by-industry/industry-consulting/industry-grant-consulting-targeted-funding-support.png",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grants-by-industry\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/images/blog/grants-by-location/search-services/local-and-state-grant-search-services.png",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grants-by-location\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/rss.xml",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-guides\\grant-research\\grant-research-and-application-services\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/tag/main-page/",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-guides\\grant-research\\grant-research-and-application-services\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/tag/money/",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-guides\\grant-research\\grant-research-and-application-services\\index.html"
+        },
+        {
+          "type": "internal",
+          "path": "/blog/tags/",
+          "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\tag\\main-page\\index.html"
+        }
+      ],
+      "checked_links": 286
+    },
+    "/blog": {
+      "broken_404": [],
+      "checked_links": 286
+    }
+  },
+  "external_404": [
+    {
+      "url": "https://grantwisdom.com/blog/tags/",
+      "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\tags\\index.html"
+    }
+  ],
+  "other_failures": [
+    {
+      "type": "external",
+      "url": "https://grantwisdom.com/blog/grant-guides/grant-research/grant-research-and-application-services/",
+      "status": -1,
+      "error": "fetch failed",
+      "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-guides\\grant-research\\grant-research-and-application-services\\index.html"
+    },
+    {
+      "type": "external",
+      "url": "https://grantwisdom.com/blog/grant-programs/",
+      "status": -1,
+      "error": "fetch failed",
+      "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-programs\\index.html"
+    },
+    {
+      "type": "external",
+      "url": "https://grantwisdom.com/blog/grant-strategy/grant-consulting/grant-strategy-consulting-build-a-funding-plan/",
+      "status": -1,
+      "error": "fetch failed",
+      "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-strategy\\grant-consulting\\grant-strategy-consulting-build-a-funding-plan\\index.html"
+    },
+    {
+      "type": "external",
+      "url": "https://grantwisdom.com/blog/grant-programs/grant-navigation/grant-program-navigation-services/",
+      "status": -1,
+      "error": "fetch failed",
+      "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-programs\\grant-navigation\\grant-program-navigation-services\\index.html"
+    },
+    {
+      "type": "external",
+      "url": "https://grantwisdom.com/blog/grant-guides/",
+      "status": -1,
+      "error": "fetch failed",
+      "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-guides\\index.html"
+    },
+    {
+      "type": "external",
+      "url": "https://grantwisdom.com/blog/grant-strategy/",
+      "status": -1,
+      "error": "fetch failed",
+      "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-strategy\\index.html"
+    },
+    {
+      "type": "external",
+      "url": "https://grantwisdom.com/blog/grants-by-demographic/",
+      "status": -1,
+      "error": "fetch failed",
+      "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grants-by-demographic\\index.html"
+    },
+    {
+      "type": "external",
+      "url": "https://grantwisdom.com/blog/grant-writing/",
+      "status": -1,
+      "error": "fetch failed",
+      "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-writing\\index.html"
+    },
+    {
+      "type": "external",
+      "url": "https://grantwisdom.com/blog/grants-by-industry/",
+      "status": -1,
+      "error": "fetch failed",
+      "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grants-by-industry\\index.html"
+    },
+    {
+      "type": "external",
+      "url": "https://grantwisdom.com/blog/grants-by-demographic/matching-services/demographic-grant-matching-services/",
+      "status": -1,
+      "error": "fetch failed",
+      "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grants-by-demographic\\matching-services\\demographic-grant-matching-services\\index.html"
+    },
+    {
+      "type": "external",
+      "url": "https://grantwisdom.com/blog/grant-writing/writing-services/professional-grant-writing-services/",
+      "status": -1,
+      "error": "fetch failed",
+      "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grant-writing\\writing-services\\professional-grant-writing-services\\index.html"
+    },
+    {
+      "type": "external",
+      "url": "https://grantwisdom.com/blog/grants-by-location/search-services/local-and-state-grant-search-services/",
+      "status": -1,
+      "error": "fetch failed",
+      "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grants-by-location\\search-services\\local-and-state-grant-search-services\\index.html"
+    },
+    {
+      "type": "external",
+      "url": "https://grantwisdom.com/blog/grants-by-industry/industry-consulting/industry-grant-consulting-targeted-funding-support/",
+      "status": -1,
+      "error": "fetch failed",
+      "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grants-by-industry\\industry-consulting\\industry-grant-consulting-targeted-funding-support\\index.html"
+    },
+    {
+      "type": "external",
+      "url": "https://grantwisdom.com/blog/grants-by-location/",
+      "status": -1,
+      "error": "fetch failed",
+      "source": "C:\\Users\\Galaxy\\grantwisdom-blog\\dist\\grants-by-location\\index.html"
+    }
+  ]
+}

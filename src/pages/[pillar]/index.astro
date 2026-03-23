@@ -265,9 +265,9 @@ const gradientStyle = `bg-gradient-to-br ${config.color}`;
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20 relative">
         <!-- Breadcrumb -->
         <div class="flex items-center gap-2 text-sm text-muted-foreground mb-8">
-          <a href="/" class="hover:text-primary transition-colors">Home</a>
+          <a href="https://grantwisdom.com/" class="hover:text-primary transition-colors">Home</a>
           <ChevronRight class="h-4 w-4" />
-          <a href="/blog" class="hover:text-primary transition-colors">Blog</a>
+          <a href="/blog/" class="hover:text-primary transition-colors">Blog</a>
           <ChevronRight class="h-4 w-4" />
           <span class={`font-medium ${config.text}`}>{config.label}</span>
         </div>
@@ -451,7 +451,7 @@ const gradientStyle = `bg-gradient-to-br ${config.color}`;
           <div class="flex flex-wrap gap-3">
             {tags.map(([tag, count]) => (
               <a 
-                href={`/blog/tag/${tag}`}
+                href={`/blog/tag/${tag}/`}
                 class="group px-4 py-2 bg-card border border-border rounded-full hover:border-primary/30 hover:bg-primary/5 transition-all"
               >
                 <span class="text-sm font-medium text-foreground">#{tag}</span>
@@ -581,12 +581,11 @@ const gradientStyle = `bg-gradient-to-br ${config.color}`;
                   Start with our beginner's guide to {config.label.toLowerCase()}, then explore specific subcategories based on your interests and experience level.
                 </p>
                 <div class="flex items-center gap-4 pt-4 border-t border-border">
-                  <img 
-                    src="/avatars/expert.jpg" 
-                    alt="Expert" 
-                    class="w-10 h-10 rounded-full border-2 border-primary/20"
-                    onerror="this.src='https://ui-avatars.com/api/?name=Grant+Expert&background=6366f1&color=fff&size=40'"
-                  />
+              <img 
+                src="https://ui-avatars.com/api/?name=Grant+Expert&background=6366f1&color=fff&size=40" 
+                alt="Expert" 
+                class="w-10 h-10 rounded-full border-2 border-primary/20"
+              />
                   <div>
                     <p class="text-sm font-medium text-foreground">Sarah Chen</p>
                     <p class="text-xs text-muted-foreground">Senior Grant Strategist</p>
@@ -676,7 +675,7 @@ const gradientStyle = `bg-gradient-to-br ${config.color}`;
         <p class="text-muted-foreground mb-8">
           Put your knowledge into action. Search 200,000+ active grants and start applying today.
         </p>
-        <a href="/grants">
+        <a href="https://grantwisdom.com/grants">
           <button class={`h-14 px-8 ${gradientStyle} text-white rounded-xl font-medium hover:opacity-90 transition-opacity inline-flex items-center gap-2 text-lg shadow-lg shadow-primary/20`}>
             Search Grants
             <ArrowRight class="h-5 w-5" />
