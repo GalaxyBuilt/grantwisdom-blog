@@ -1,4 +1,5 @@
 import { Sprout } from "lucide-react";
+import { SocialLinks } from "./SocialLinks";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -19,6 +20,7 @@ export function Footer() {
             <p className="text-muted-foreground text-sm">
               Discover and manage grants worldwide with our comprehensive platform.
             </p>
+            <SocialLinks className="mt-6" />
           </div>
 
           {/* Product */}
@@ -94,17 +96,6 @@ export function Footer() {
               <span className="mx-1">•</span> 
               Built by <a href="https://Galaxybuilt.dev" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">GalaxyBuilt</a>
             </p>
-          </div>
-          <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
-              Twitter
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
-              LinkedIn
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
-              GitHub
-            </a>
           </div>
         </div>
       </div>
